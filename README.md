@@ -84,51 +84,13 @@ The performance of the models was evaluated using **f1-score accuracy**. The res
 The **best-performing model** was **N-Gram + Lexicon + Linguistic + Custom**, achieving an **f1-score accuracy of 0.5476**.
 
 ### Classification Report
-|          |precision|   recall  |f1-score   |support|
+|          precision    |recall  |f1-score   |support|
+|negative      |0.3503    |0.4276    |0.3851       |145|
+|neutral       |0.5806    |0.6136    |0.5967       |352|
+|positive      |0.6254    |0.5306    |0.5741       |343|
+|accuracy      |          |          |0.5476       |840|
+|macro avg     |0.5188    |0.5239    |0.5186       |840|
+|weighted avg  |0.5592    |0.5476    |0.5510       |840|
 
-|negative     |0.3503    |0.4276    |0.3851       145|
- neutral     0.5806    0.6136    0.5967       352
-positive     0.6254    0.5306    0.5741       343
-accuracy                         0.5476       840
-macro avg    0.5188    0.5239    0.5186       840
-weighted avg 0.5592    0.5476    0.5510       840
 
----
 
-## Usage
-
-To run the project, use the following command:
-
-```bash
-python Solution-2.py --model <model_name> --lexicon <lexicon_name> --train <train_filepath> --evaluation <evaluation_filepath>
-```
-
-## Arguments
---model: The model to train and evaluate. Options: Ngram, Lex, Ling, Ngram+Lex, Ngram+Ling, Ngram+Lex+Ling, Ngram+custom, custom, Ngram+Lex+Ling+custom.
-
---lexicon: The sentiment lexicon to use. Options: Hashtag, Sentiment140.
-
---train: Path to the training dataset (CSV file).
-
---evaluation: Path to the evaluation dataset (CSV file).
-
-## Example
-```bash
-python Solution-2.py --model Ngram+Lex+Ling+custom --lexicon Hashtag --train ./data/train.csv --evaluation ./data/dev.csv
-```
-
-## Dependencies
-To install the required dependencies, run:
-pip install -r requirements.txt
-
-## Future Work
-Experiment with deep learning models (e.g., LSTM, BERT) for improved accuracy.
-
-Incorporate additional lexicons and domain-specific sentiment analysis.
-
-Optimize feature extraction and model training for real-time sentiment analysis.
-
-Acknowledgments
-Columbia University AI Certificate Program for providing the foundation for this project.
-
-ACL Anthology for the research paper that inspired the feature implementation.
