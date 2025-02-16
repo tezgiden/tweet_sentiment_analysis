@@ -99,7 +99,7 @@ To run the project, use the following command:
 ```bash
 python Solution-2.py --model <model_name> --lexicon <lexicon_name> --train <train_filepath> --evaluation <evaluation_filepath>
 ```
-
+---
 ## Arguments
 
 - `--model`: The model to train and evaluate.  
@@ -112,10 +112,28 @@ python Solution-2.py --model <model_name> --lexicon <lexicon_name> --train <trai
 
 - `--evaluation`: Path to the evaluation dataset (CSV file).
 
+---
+
 ## Dependencies
 To install the required dependencies, run:
 ```bash
 pip install -r requirements.txt
 ```
 
+---
 
+## Future Work
+- Experiment with **deep learning models** (e.g., LSTM, BERT) for improved accuracy.
+- Incorporate **additional lexicons** and **domain-specific sentiment analysis**.
+- Optimize feature extraction and model training for **real-time sentiment analysis**.
+
+---
+
+## Acknowledgments
+- **Columbia University AI Certificate Program** for providing the foundation for this project.
+- **ACL Anthology** for the research paper that inspired the feature implementation.
+```
+
+### Key Fixes:
+1. The **Classification Report** section is now properly formatted using triple backticks (` ```plaintext `) to ensure it renders correctly in Markdown.
+2. All sections are consistently formatted with proper headings, tables, and code blocks.
