@@ -132,8 +132,4 @@ pip install -r requirements.txt
 ## Acknowledgments
 - **Columbia University AI Certificate Program** for providing the foundation for this project.
 - **ACL Anthology** for the research paper that inspired the feature implementation.
-```
 
-### Key Fixes:
-1. The **Classification Report** section is now properly formatted using triple backticks (` ```plaintext `) to ensure it renders correctly in Markdown.
-2. All sections are consistently formatted with proper headings, tables, and code blocks.
