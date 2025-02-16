@@ -96,5 +96,26 @@ The **best-performing model** was **N-Gram + Lexicon + Linguistic + Custom**, ac
 
 ## Usage
 To run the project, use the following command:
+```bash
 python Solution-2.py --model <model_name> --lexicon <lexicon_name> --train <train_filepath> --evaluation <evaluation_filepath>
+```
+
+## Arguments
+
+- `--model`: The model to train and evaluate.  
+  **Options**: `Ngram`, `Lex`, `Ling`, `Ngram+Lex`, `Ngram+Ling`, `Ngram+Lex+Ling`, `Ngram+custom`, `custom`, `Ngram+Lex+Ling+custom`.
+
+- `--lexicon`: The sentiment lexicon to use.  
+  **Options**: `Hashtag`, `Sentiment140`.
+
+- `--train`: Path to the training dataset (CSV file).
+
+- `--evaluation`: Path to the evaluation dataset (CSV file).
+
+## Dependencies
+To install the required dependencies, run:
+```bash
+pip install -r requirements.txt
+```
+
 
