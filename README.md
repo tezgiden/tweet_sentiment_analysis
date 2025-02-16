@@ -4,9 +4,13 @@ This code was part of the Columbia University AI Certificate Program, NLP course
 
 I implemented part of the features mentioned in https://aclanthology.org/S13-2053.pdf.
 
-#I implemented 4 models for this project:
-#NGRAM#: I utilized TfidfVectorizer to train the Vectorizor in the dataset.
-#Lexicon features#: I implemented following features for Lexicon analysis.
+#I implemented 4 models for this project
+
+#NGRAM 
+I utilized TfidfVectorizer to train the Vectorizor in the dataset.
+
+#Lexicon features
+I implemented following features for Lexicon analysis.
        1 - total count of tokens (unigrams + bigrams) in the tweet with positive score > 0
        2 - total count of tokens (unigrams + bigrams) in the tweet with negative score > 0
        3 - summed positive score of all the unigrams and bigrams in the tweet 
@@ -15,7 +19,7 @@ I implemented part of the features mentioned in https://aclanthology.org/S13-205
        6 - the max negative score of all the unigrams and bigrams in the tweet
        7 - the max of the positive scores of the last unigram / bigram in the tweet (with score > 0)
        8 - the max of the negative scores of the last unigram / bigram in the tweet (with score > 0)  
-#Linguistic features#:
+#Linguistic features:
        0 - number of tokens with all their characters capitalized
        1-23 - separate counts of each POS tag in the following sorted order:
                [
@@ -25,9 +29,10 @@ I implemented part of the features mentioned in https://aclanthology.org/S13-205
        24  - number of hashtags
        25  - number of words with one character repeated more than two times
 
-#Custom feature (Negation)#: Analyzed the count of Negation sentences in the tweet
+#Custom feature (Negation)
+Analyzed the count of Negation sentences in the tweet
 
-#Result#
+#Result
 In my case the f1-score accuracy scores were very close:
                  f1-score accuracy 
 Ngram                 0.5238
