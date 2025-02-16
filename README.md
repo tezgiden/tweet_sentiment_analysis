@@ -84,9 +84,9 @@ The performance of the models was evaluated using **f1-score accuracy**. The res
 The **best-performing model** was **N-Gram + Lexicon + Linguistic + Custom**, achieving an **f1-score accuracy of 0.5476**.
 
 ### Classification Report
-          precision    recall  f1-score   support
+|          |precision|   recall  |f1-score   |support|
 
-negative     0.3503    0.4276    0.3851       145
+|negative     |0.3503    |0.4276    |0.3851       145|
  neutral     0.5806    0.6136    0.5967       352
 positive     0.6254    0.5306    0.5741       343
 accuracy                         0.5476       840
